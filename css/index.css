@@ -1,0 +1,372 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 100%;
+}
+
+.banner_prev,
+.banner_next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+}
+.banner_prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.banner_next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.banner_nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255,.3);
+    border-radius: 7px;
+}
+.banner_nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    background-color: white;
+    border-radius: 50%;
+    line-height: 8px;
+}
+/* 权重问题 */
+.banner_nav .banner_nav_selected{
+    background-color: orange;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 100%;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #ccc;
+}
+
+.news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #ccc;
+    line-height: 33px;
+    padding: 0 15px;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    padding-top: 5px;
+}
+
+.news_bd {
+    padding: 5px 15px 0;
+}
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 210px;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 70px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.lifeservice ul li:nth-child(1) i {
+    background: url(../images/icons.png) -19px -16px;
+}
+
+.lifeservice ul li:nth-child(2) i {
+    background: url(../images/icons.png) -79px -16px;
+}
+
+.lifeservice ul li:nth-child(3) i {
+    background: url(../images/icons.png) -141px -16px;
+}
+
+.lifeservice ul li:nth-child(4) i {
+    background: url(../images/icons.png) -205px -16px;
+}
+
+.lifeservice ul li:nth-child(5) i {
+    background: url(../images/icons.png) -17px -88px;
+}
+
+.lifeservice ul li:nth-child(6) i {
+    background: url(../images/icons.png) -77px -88px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+    background: url(../images/icons.png) -140px -88px;
+}
+
+.lifeservice ul li:nth-child(8) i {
+    background: url(../images/icons.png) -206px -88px;
+}
+
+.lifeservice ul li:nth-child(9) i {
+    background: url(../images/icons.png) -17px -160px;
+}
+
+.lifeservice ul li:nth-child(10) i {
+    background: url(../images/icons.png) -79px -158px;
+}
+
+.lifeservice ul li:nth-child(11) i {
+    background: url(../images/icons.png) -140px -160px;
+}
+
+.lifeservice ul li:nth-child(12) i {
+    background: url(../images/icons.png) -206px -160px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+
+.recom_hd {
+    float: left;
+    width: 205px;
+    height: 100%;
+    background-color: #645d5a;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.guess_title {
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+.guess_title h4 {
+    float: left;
+    font-size: 14px;
+    color: #645d5a;
+}
+
+.guess_title p {
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #645d5a;
+}
+
+.guess_title p::after {
+    content: '\e911';
+    font-family: 'icomoon';
+}
+
+.guess {
+    height: 230px;
+    border: 1px solid #ccc;
+}
+
+.guess_item {
+    position: relative;
+    float: left;
+    width: 199px;
+    padding: 5px 30px;
+}
+
+.guess_item:nth-child(-n+5):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 210px;
+    background-color: #ddd;
+}
+
+.guess_item img {
+    width: 140px;
+    height: 140px;
+}
+
+.guess_item h4,
+p {
+    font-size: 16px;
+    color: rgb(10, 10, 10);
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.guess_item span {
+    color: #c81623;
+}
+
+.guess_item span h2 {
+    display: inline-block;
+    font-size: 18px;
+    color: #c81623;
+}
+
+/* 家用电器区域 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 10px;
+}
+
+.floor .w{
+    margin-top: 30px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.bb {
+    /* 一般轻快下 a如果包含块级元素，都将a转化为块级元素 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

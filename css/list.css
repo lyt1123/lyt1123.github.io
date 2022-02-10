@@ -1,0 +1,158 @@
+/* 列表页 */
+.nav {
+    overflow: hidden;
+}
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c8125c;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: "icomoon";
+}
+
+/* 列表 */
+.sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.sk_bd_item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+
+    transition: all 0.5s;
+}
+
+.sk_bd_item img {
+    width: 100%;
+    height: 260px;
+}
+
+.content {
+    width: calc(100%-30px);
+    height: calc(100%-260px);
+    margin: 0 15px;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.price {
+    display: inline-block;
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.orign_price {
+    color: gray;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.solt {
+    float: left;
+    font-size: 12px;
+}
+
+.progress_bg {
+    float: left;
+    width: 140px;
+    height: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.current_progress {
+    width: 0px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+
+    transition: all 0.5s;
+}
+
+.residue {
+    float: left;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.buy {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    margin-top: 10px;
+}
+
+.sk_bd_item:hover {
+    box-shadow: 1px 1px 10px gray;
+    border: 1px solid #c8125c;
+}
+
+.sk_bd_item:hover .current_progress{
+    width: calc(100%*0.87);
+}
+
